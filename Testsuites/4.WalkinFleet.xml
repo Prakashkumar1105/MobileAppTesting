@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite4">
+
+<listeners>
+<listener class-name="org.aapium.Listeners"/>
+</listeners>
+  <test  name="Clone_Feature">
+      <classes>
+     <class name="Walkin_Fleet.CreateSEWith_WailkinFleet"/>   
+     	<class name="Walkin_Fleet.Edit_SE_With_WailkinFleet"/> 
+      </classes>
+ 
+  </test> 
+  
+</suite> 
+
+
+ 

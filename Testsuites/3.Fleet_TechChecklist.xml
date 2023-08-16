@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite3">
+
+<listeners>
+<listener class-name="org.aapium.Listeners"/>
+</listeners>
+  <test  name="Clone_Feature">
+      <classes>
+     	 <class name="FleetAndTech_Checklist.FC_TC_TechAccept_Enroute_MarkAsRepaired"/> 
+     	<class name="FleetAndTech_Checklist.FC_TC_Complete_Reject"/> 
+     	
+      </classes>
+ 
+  </test> 
+  
+</suite> 
+
+
+ 

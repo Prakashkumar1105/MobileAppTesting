@@ -1,0 +1,189 @@
+
+Suite No : 1
+------------
+End to End Service event flow
+=============================
+Steps : 
+
+1. Login as a TD-admin+driver user
+2. create a new event 
+3. edit event like 
+	a. Reported location, add associated numbers, Breakdownnotes, Fleet pofiles
+	b. Add tire service line and save the event
+4. Logout and login as a SP-admin user 
+5. Open the newly created event and assign to SP-tech without accept the event
+6. Logout and login as a SP-Tech user 
+7. Go and filter the submitted event and accept with ETA
+8. Add the PLT in service lines view page
+9. Edit the service line(required fields) in Mark as repaired page 
+10. Fill the Fleet checklist and Tech checklist questions for Mark as repaired action
+11. Logged out and login as a SP-admin and complete the event 
+12. Logged out and login as a TD-admin+driver and Approve the event 
+
+
+
+Suite No : 2
+------------
+Reported by user
+================
+Steps : 
+
+1. Loin as a TD-admin+driver user
+2. Add the reported by name 
+3. Enable the "Add as afollower" check box
+4. Click next button and validate the combination of Name&number or Name&email should be filled in reported by fields
+5. Enter the invalid phone number for ph.no field validation. And re-enter the valid phone number
+6. Enter the invalid email id for email field validation. And re-enter the valid email id
+7. Click next button and select the service line items, Then create a event
+8. Open the newly created event and verify the reported by name, ph.no, email are correctly displayed in event details page
+9. Click the share event option and verify the reported by name, ph.no, email are correctly displayed in "Shared with" tab
+10. click the edit icon and change the reported by user name and save the event
+11. Verify the edited name will be displayed in the event details page
+
+
+Suite No : 3
+------------
+Fleet checklist and Technician checklist
+===============================================
+Steps : 
+
+Class : 1
+
+1. Create a event from SP-admin
+2. Assign to the technician(mat sp1 tech1)and accept the event with ETA as a SP-admin
+3. Logged out and log in as a technician user (mat sp1 tech1) and open the inprcess status event by using fliter option
+4. Click "Tech accept" and answer the all type of questions with question logic 
+5. Fleet checklist will be displayed first and then tech checklist 
+6. Then click "Departed" button and fill the FC and TC questions with logic
+7. Then click "Mark as repaired" button and fill the FC and TC questions with logic
+
+Class : 2
+
+8. Logged in as a SP-admin and open the recently repaired event
+9. click "Complete" button and fill the FC and TC questions with logic
+10. Create a new event and open that event from event list page
+11. Click "Mark as repaired" button and fill the FC and TC questions with logic
+
+
+
+Suite No : 4
+------------
+Walkin fleet
+===============================================
+Steps : 
+
+class:1
+
+1. Logged in as a SP_admin Create a event with walkin flee details like EP/TD name, Address, phone number
+2. Open the created event and verify the name, address and phone by using "Assert.assertEquals" in method
+
+class : 2
+
+3. Logged in as a SP-admin user 
+4. Open the recently created event with walkin fleet
+5. click edit icon and click Upadte button for walkin details
+6. Clear existing walkin fleet name and enter new name
+7. Clear existing walkin fleet ph.number and enter new ph.number
+8. enter ETA since it is submitted status event and save the event 
+9. verify the updated waklin fleet name and phone by using "Assert.assertEquals" in method
+
+
+Suite No : 5
+------------
+PLT
+====
+pre-condtion : Added default parts for the perticuler service lines with parts bundle in web app plt config page
+
+Steps : 
+
+class:1 - Add PLT from event details page
+
+1. Logged in as a tech and Create a event with 2 service lines(which is plt configured in web) 
+2. Open the event and go to service line view page and click add plt link
+3. Add default part which is already configured
+4. Search and select a part by using part code
+5. Add custom part with paer code, description, group code
+6. Add the labor detail as regular hr and enter the 2 hr's worked
+7. Go to plt view details view page and edit the worked hours to 3 hr's and clik save the changes button
+
+
+class:2 - Add PLT from "Mark as repaired" page
+
+1. Logged in as a tech user and Open the event and go to "Mark as repaired" page
+2. Click edit service line button and click "View parts/labor details link
+3. Add default part which is already configured
+4. Search and select a part by using part code
+5. Add custom part with pae code, description, group code
+6. Add the labor detail as regular hr and enter the 2 hr's worked
+7. Go to plt view details view page and edit the worked hours to 3 hr's and clik save the changes button
+
+
+class:3 - Add PLT from "Complete event" page
+
+1. Logged in as a SP-admin user and Open the event and click "complete" button 
+2. Click edit service line button for 2nd service line and click "View parts/labor details link
+3. Add default part which is already configured
+4. Search and select a part by using part code
+5. Add custom part with pae code, description, group code
+6. Add the labor detail as regular hr and enter the 2 hr's worked
+7. Go to plt view details view page and edit the worked hours to 3 hr's and clik save the changes button
+
+
+
+
+Suite No : 6
+------------
+PLT
+====
+pre-condtion : Added default parts for the perticuler service lines with parts bundle in web app plt config page
+
+Steps : 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

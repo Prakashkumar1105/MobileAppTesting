@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite5">
+
+<listeners>
+<listener class-name="org.aapium.Listeners"/>
+</listeners>
+  <test  name="Clone_Feature">
+      <classes>
+     	<!--     -->
+     	 <class name="PLT.Add_PLT_From_EventDetailsPage"/>  
+     	<class name="PLT.Add_PLT_From_MarkAsRepairedPage"/> 
+     	<class name="PLT.Add_PLT_From_CompleteEventPage"/>  
+      </classes>
+ 
+  </test> 
+  
+</suite> 
+
+
+ 
