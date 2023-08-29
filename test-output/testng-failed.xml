@@ -4,20 +4,18 @@
   <listeners>
     <listener class-name="org.aapium.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Clone_Feature(failed)">
+  <test thread-count="5" name="End_To_End_EventFlow(failed)">
     <classes>
-      <class name="PLT.Add_PLT_From_MarkAsRepairedPage">
+      <class name="org.aapium.EndToEnd_SE_Flow">
         <methods>
-          <include name="PLT_in_MarkAsRepairedPage"/>
+          <include name="SP_Admin_Complete_Flow"/>
+          <include name="TD_Admin_Approve_Flow"/>
+          <include name="SC_Admin_flow"/>
+          <include name="TDflow"/>
           <include name="configuration"/>
+          <include name="SP_Tech_Flow"/>
         </methods>
-      </class> <!-- PLT.Add_PLT_From_MarkAsRepairedPage -->
-      <class name="PLT.Add_PLT_From_CompleteEventPage">
-        <methods>
-          <include name="PLT_in_CompleteEventPage"/>
-          <include name="configuration"/>
-        </methods>
-      </class> <!-- PLT.Add_PLT_From_CompleteEventPage -->
+      </class> <!-- org.aapium.EndToEnd_SE_Flow -->
     </classes>
-  </test> <!-- Clone_Feature(failed) -->
+  </test> <!-- End_To_End_EventFlow(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

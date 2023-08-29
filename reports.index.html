@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Mobile test results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 3, 2023 06:53:31 PM</span></a>
+<a href="#"><span class="badge badge-primary">Aug 23, 2023 05:20:31 PM</span></a>
 </li>
 </ul>
 </div>
@@ -80,14 +80,91 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">PLT_in_EventDetailsPage</p>
+            <p class="name">TDflow</p>
             <p class="text-sm">
-              <span>6:54:12 PM</span> / <span>00:02:23:170</span>
+              <span>5:21:12 PM</span> / <span>00:00:31:587</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TDflow</h5>
+<span class='badge badge-success'>08.23.2023 5:21:12 PM</span>
+<span class='badge badge-danger'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-default'>00:00:31:587</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\91934\eclipse-workspace\ReachPOM//reportsTDflow.png' src="C:\Users\91934\eclipse-workspace\ReachPOM//reportsTDflow.png">
+    <div class="title">TDflow</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:21:43 PM</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Create Service Request']})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(<generated>)
+	at org.appium.pageobjct.android.ServiceEventCreation.clickservicerequest(ServiceEventCreation.java:103)
+	at org.aapium.EndToEnd_SE_Flow.TDflow(EndToEnd_SE_Flow.java:78)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@329bad59 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 4 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='Create Service Request']})
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'PRAKASH', ip: '172.16.16.27', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:165)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 6 more
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">SC_Admin_flow</p>
+            <p class="text-sm">
+              <span>5:21:44 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -95,184 +172,198 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">PLT_in_EventDetailsPage</h5>
-<span class='badge badge-success'>07.03.2023 6:54:12 PM</span>
-<span class='badge badge-danger'>07.03.2023 6:56:35 PM</span>
-<span class='badge badge-default'>00:02:23:170</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:56:35 PM</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="2"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">PLT_in_MarkAsRepairedPage</p>
-            <p class="text-sm">
-              <span>6:56:57 PM</span> / <span>00:00:51:717</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">PLT_in_MarkAsRepairedPage</h5>
-<span class='badge badge-success'>07.03.2023 6:56:57 PM</span>
-<span class='badge badge-danger'>07.03.2023 6:57:49 PM</span>
-<span class='badge badge-default'>00:00:51:717</span>
+<h5 class="test-status text-pass">SC_Admin_flow</h5>
+<span class='badge badge-success'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-danger'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\91934\eclipse-workspace\ReachPOM//reportsPLT_in_MarkAsRepairedPage.png' src="C:\Users\91934\eclipse-workspace\ReachPOM//reportsPLT_in_MarkAsRepairedPage.png">
-    <div class="title">PLT_in_MarkAsRepairedPage</div>
-    </div></div>
-<div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>6:57:48 PM</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='?']})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(<generated>)
-	at org.appium.pageobjct.android.TechnicianActions.Select_DefaultPart(TechnicianActions.java:269)
-	at PLT.Add_PLT_From_MarkAsRepairedPage.PLT_in_MarkAsRepairedPage(Add_PLT_From_MarkAsRepairedPage.java:78)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@8054fe2 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 4 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='?']})
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'PRAKASH', ip: '192.168.43.183', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
-Driver info: driver.version: RemoteWebDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:165)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 6 more
-</textarea>
-          
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
+</div>          </div>
         </li>
-        <li class="test-item"  status="fail" test-id="3"
+        <li class="test-item"  status="pass" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">PLT_in_CompleteEventPage</p>
+            <p class="name">Test case Skipped</p>
             <p class="text-sm">
-              <span>6:58:01 PM</span> / <span>00:01:00:484</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>5:21:44 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">PLT_in_CompleteEventPage</h5>
-<span class='badge badge-success'>07.03.2023 6:58:01 PM</span>
-<span class='badge badge-danger'>07.03.2023 6:59:01 PM</span>
-<span class='badge badge-default'>00:01:00:484</span>
+<h5 class="test-status text-pass">Test case Skipped</h5>
+<span class='badge badge-success'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-danger'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\91934\eclipse-workspace\ReachPOM//reportsPLT_in_CompleteEventPage.png' src="C:\Users\91934\eclipse-workspace\ReachPOM//reportsPLT_in_CompleteEventPage.png">
-    <div class="title">PLT_in_CompleteEventPage</div>
-    </div></div>
-<div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>6:59:00 PM</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Add part']})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(<generated>)
-	at org.appium.pageobjct.android.TechnicianActions.Click_AddPart_Button(TechnicianActions.java:262)
-	at PLT.Add_PLT_From_CompleteEventPage.PLT_in_CompleteEventPage(Add_PLT_From_CompleteEventPage.java:96)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@49cb3881 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 4 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='Add part']})
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'PRAKASH', ip: '192.168.43.183', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
-Driver info: driver.version: RemoteWebDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:165)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 6 more
-</textarea>
-          
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">SP_Tech_Flow</p>
+            <p class="text-sm">
+              <span>5:21:44 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
           </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">SP_Tech_Flow</h5>
+<span class='badge badge-success'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-danger'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test case Skipped</p>
+            <p class="text-sm">
+              <span>5:21:44 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test case Skipped</h5>
+<span class='badge badge-success'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-danger'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">SP_Admin_Complete_Flow</p>
+            <p class="text-sm">
+              <span>5:21:44 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">SP_Admin_Complete_Flow</h5>
+<span class='badge badge-success'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-danger'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test case Skipped</p>
+            <p class="text-sm">
+              <span>5:21:44 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test case Skipped</h5>
+<span class='badge badge-success'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-danger'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TD_Admin_Approve_Flow</p>
+            <p class="text-sm">
+              <span>5:21:44 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TD_Admin_Approve_Flow</h5>
+<span class='badge badge-success'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-danger'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test case Skipped</p>
+            <p class="text-sm">
+              <span>5:21:44 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test case Skipped</h5>
+<span class='badge badge-success'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-danger'>08.23.2023 5:21:44 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
         </li>
       </ul>
     </div>
@@ -294,15 +385,15 @@ Driver info: driver.version: RemoteWebDriver
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">org.openqa.selenium.NoSuchElementException</p>
-<p class="duration text-sm">2 tests</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>org.openqa.selenium.NoSuchElementException</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -315,16 +406,9 @@ Driver info: driver.version: RemoteWebDriver
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:56:57 PM</td>
+<td>17:21:12 PM</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>PLT_in_MarkAsRepairedPage</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>18:58:01 PM</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'>PLT_in_CompleteEventPage</a>
+<a href="#" class="linked" test-id='1' id='1'>TDflow</a>
 </td>
 </tr>
 </tbody>
@@ -344,25 +428,25 @@ Driver info: driver.version: RemoteWebDriver
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 3, 2023 06:53:31 PM</h3>
+<h3>Aug 23, 2023 05:20:31 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 3, 2023 06:59:02 PM</h3>
+<h3>Aug 23, 2023 05:21:44 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>1</h3>
+<h3>8</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>2</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -378,12 +462,12 @@ Driver info: driver.version: RemoteWebDriver
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='33%'>
-<b>1</b> tests passed
+<div><small data-tooltip='88%'>
+<b>8</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='66%'><b>2</b> tests failed,
+<small data-tooltip='11%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -401,9 +485,9 @@ Driver info: driver.version: RemoteWebDriver
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='33%'><b>1</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='66%'><b>2</b> events failed,
+<small data-tooltip='100%'><b>1</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -420,7 +504,7 @@ Driver info: driver.version: RemoteWebDriver
 </div></div>
 <script>
 var timeline = {
-"PLT_in_EventDetailsPage":143.17,"PLT_in_MarkAsRepairedPage":51.717,"PLT_in_CompleteEventPage":60.484
+"TDflow":31.587,"SC_Admin_flow":0,"Test case Skipped":0,"SP_Tech_Flow":0,"Test case Skipped":0,"SP_Admin_Complete_Flow":0,"Test case Skipped":0,"TD_Admin_Approve_Flow":0,"Test case Skipped":0
 };
 </script>
 <div class="row">
@@ -443,8 +527,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 2,
+passParent: 8,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -460,8 +544,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 1,
-failEvents: 2,
+passEvents: 0,
+failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0
