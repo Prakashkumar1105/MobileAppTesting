@@ -24,7 +24,7 @@ public class TDActions extends BasicCodesToStartApp  {
 		LoginAndEventCreation.setpassword(StoreProperties.get("Password"));
 		LoginAndEventCreation.login();
 		LoginAndEventCreation.allowlocationpermission();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		
 		//String name = driver.findElement(By.xpath("//android.widget.TextView[@text='Confirm this address']")).getText();
 		//Assert.assertEquals(name, "Confirm this address");

@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="FleetAndTech_Checklist.FC_TC_Complete_Reject">
+      <class name="org.aapium.TDActions">
         <methods>
-          <include name="PLT_in_EventDetailsPage"/>
+          <include name="TDflow"/>
           <include name="configuration"/>
         </methods>
-      </class> <!-- FleetAndTech_Checklist.FC_TC_Complete_Reject -->
+      </class> <!-- org.aapium.TDActions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

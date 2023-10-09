@@ -210,6 +210,7 @@ public class EndToEnd_SE_Flow extends BasicCodesToStartApp  {
 		TechAction.Click_AddPart_Button();
 		TechAction.Click_AddDefaultPart_Button();
 		Thread.sleep(2000);
+		
 		TechAction.Select_DefaultPart();
 		TechAction.Click_Addselected_Button();
 		Thread.sleep(2000);
