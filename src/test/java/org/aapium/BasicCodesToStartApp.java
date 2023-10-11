@@ -39,7 +39,7 @@ public class BasicCodesToStartApp {
 		option.setDeviceName("Android Emulator"); // for emulator
 		//option.setDeviceName("Android device"); //for real device
 		
-		option.setApp(StoreProperties.get("staging_apk"));
+		option.setApp(StoreProperties.get("testing_apk"));
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"),option);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	 }
