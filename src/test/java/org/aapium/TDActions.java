@@ -7,6 +7,8 @@ import org.appium.pageobjct.android.EditServiceEvent;
 import org.appium.pageobjct.android.LoginAndEventCreation;
 import org.appium.pageobjct.android.ServiceEventCreation;
 import org.appium.utils.StoreProperties;
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
@@ -26,10 +28,11 @@ public class TDActions extends BasicCodesToStartApp  {
 		LoginAndEventCreation.allowlocationpermission();
 		Thread.sleep(4000);
 		
-		//String name = driver.findElement(By.xpath("//android.widget.TextView[@text='Confirm this address']")).getText();
-		//Assert.assertEquals(name, "Confirm this address");
+		String name = driver.findElement(By.xpath("//android.widget.TextView[@text='Confirm this address']")).getText();
+		Assert.assertEquals(name, "Confirm this address");
 		LoginAndEventCreation.confirmlocation();
-
+		
+		
 			
 		ServiceEventCreation EventCreation = new ServiceEventCreation(driver);
 		EventCreation.clickservicerequest();

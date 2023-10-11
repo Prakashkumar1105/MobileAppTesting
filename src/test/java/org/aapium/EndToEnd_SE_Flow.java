@@ -69,8 +69,8 @@ public class EndToEnd_SE_Flow extends BasicCodesToStartApp  {
 		LoginAndEventCreation.login();
 		LoginAndEventCreation.allowlocationpermission();
 		Thread.sleep(3000);
-//		String name = driver.findElement(By.xpath("//android.widget.TextView[@text='Confirm this address']")).getText();
-//		Assert.assertEquals(name, "Confirm this address");
+		String name = driver.findElement(By.xpath("//android.widget.TextView[@text='Confirm this address']")).getText();
+		Assert.assertEquals(name, "Confirm this address");
 		LoginAndEventCreation.confirmlocation();
 
 	

@@ -9,8 +9,9 @@
 
   <test thread-count="5" name="End_To_End_EventFlow">
       <classes>
-          <class name="org.aapium.EndToEnd_SE_Flow"/>   
-     <!--     <class name="org.aapium.SP_AdminCompleteActions"/>   -->
+        
+          <class name="org.aapium.EndToEnd_SE_Flow"/>    
+  <!--         <class name="org.aapium.SP_AdminCompleteActions"/>   -->
          
       </classes>
   </test> 

@@ -60,11 +60,6 @@ public class Listeners extends BasicCodesToStartApp  implements ITestListener  {
 
 	}
 
-	
-
-	
-
-	
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
