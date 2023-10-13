@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.aapium.TDActions">
+      <class name="Attachments.Add_Remove_Attachments">
         <methods>
           <include name="TDflow"/>
           <include name="configuration"/>
         </methods>
-      </class> <!-- org.aapium.TDActions -->
+      </class> <!-- Attachments.Add_Remove_Attachments -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

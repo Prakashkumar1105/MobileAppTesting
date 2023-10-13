@@ -1,4 +1,4 @@
-package org.aapium;
+package Attachments;
 
 
 import java.io.FileInputStream;
@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.aapium.BasicCodesToStartApp;
 import org.appium.pageobjct.android.AcceptAndAssignToTech;
 import org.appium.pageobjct.android.ApproveTheEventByTD;
 import org.appium.pageobjct.android.AssignToServiceCenterFromTD;
@@ -35,46 +36,46 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class EndToEnd_SE_Flow extends BasicCodesToStartApp  {
-	
-	
-	// Scenario and steps
-//		1. Login as a TD-admin+driver user
-//		2. create a new event 
-//		3. edit event like 
-//			reported location, add associated numbers, Breakdownnotes, Fleet pofiles
-//			Add tire service line and save the event
-//		4. Logout and login as a SP-admin user 
-//		5. Open the newly created event and assign to SP-tech wothout accept the event
-//		6. Logout and login as a SP-Tech user 
-//		7. Go and filter the submitted event and accept with ETA
-//		8. Add the PLT in service lines 
-//		9. Edit the service line in Mark as repaired page
-//		10. Tech checklist questions for Mark as repaired
-//		11. Logged out and login as a SP-admin and complete the event 
-//		12. Logged out and login as a TD-admin+driver and Approve the event 
-//
-	
-	
+public class Add_Remove_Attachments extends BasicCodesToStartApp  {
 	
 	@Test 
 		
 	public void TDflow() throws InterruptedException, IOException  {
 
-							
+//		Scenario : 
+//		Cretae a event from cc with TD 
+//		Add/remove an images from event details page (through gallary and camera)
+//		Add/remove an images from service line edit page (through gallary and camera)
+//		Assign the event to sp-admin
+//		Add/remove an images from event details page (through gallary and camera)
+//		Assign the event to sp-tech from sp -admin
+//		Add/remove an images from event details page (through gallary and camera)
+//		Add/remove an images from service line edit page (through gallary and camera)
+//		Add/remove an images from event edit page (through gallary and camera)
+//		Add/remove an images from mark as repaired page (through gallary and camera)
+//		Repair the event as a tech user
+//		login as a sp-admin and Add/remove an images from complete event page (through gallary and camera)
+//		Complete the event 
+//
+		TechnicianActions TechAction = new TechnicianActions(driver);
+		
+		
+		
+		
+		
 		LoginAndEventCreation LoginAndEventCreation = new LoginAndEventCreation(driver);
 		LoginAndEventCreation.clickstart();
-		LoginAndEventCreation.setusername(StoreProperties.get("TD_User"));                                                       //	prakash+tdadmin@reach24.net , prakash+stgadd+drv@reach24.net, prakash+tdadmin@reach24.net
+		LoginAndEventCreation.setusername(StoreProperties.get("CC1_Admin_User"));                                                       //	prakash+tdadmin@reach24.net , prakash+stgadd+drv@reach24.net, prakash+tdadmin@reach24.net
 		LoginAndEventCreation.setpassword(StoreProperties.get("Password"));
 		LoginAndEventCreation.login();
 		LoginAndEventCreation.allowlocationpermission();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 //		String name = driver.findElement(By.xpath("//android.widget.TextView[@text='Confirm this address']")).getText();
 //		Assert.assertEquals(name, "Confirm this address");
 		LoginAndEventCreation.confirmlocation();
 
 	
-		ServiceEventCreation EventCreation = new ServiceEventCreation(driver);
+	/*	ServiceEventCreation EventCreation = new ServiceEventCreation(driver);
 		EventCreation.clickservicerequest();
 		EventCreation.SelectEquipmentType();
 		EventCreation.EnterEquipmentnumber(StoreProperties.get("Equipment_Number"));
@@ -92,12 +93,40 @@ public class EndToEnd_SE_Flow extends BasicCodesToStartApp  {
 		EventCreation.ClickServicelineNextbutton();
 		EventCreation.ClickDonebutton();             
 		Thread.sleep(3000);
-		
+	*/	
 		EditServiceEvent EditTheEvent = new EditServiceEvent(driver);
 		EditTheEvent.ClickserviceAndInspection();
 		EditTheEvent.OpenNewEvent();
+		TechAction.ClickAcceptButton();
+		TechAction.GiveETA();
+		TechAction.ClickConfrimETAButton();
+		Thread.sleep(3000);
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		TechAction.ClickServiceline();
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//		TechAction.SelectServiceLine();
+		Thread.sleep(4000);
+		
+		
 		EditTheEvent.Clickediticon();
 		EditTheEvent.ChangeReportedLocation();
+		EditTheEvent.ClickNextbutton();
+		EditTheEvent.ClickDone();  
+		Thread.sleep(3000);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	/*	
+		
+		
+		
 		EditTheEvent.EnterAssosiatedpowerunit(StoreProperties.get("Assosiatedpowerunit"));
 		EditTheEvent.EnterAssociatedcontainer(StoreProperties.get("Associatedcontainer"));
 		EditTheEvent.Clicknotloaded();
@@ -109,7 +138,7 @@ public class EndToEnd_SE_Flow extends BasicCodesToStartApp  {
 		EditTheEvent.EnterODOmeter(StoreProperties.get("Odometer_Reading"));
 		EditTheEvent.EnterHubometer(StoreProperties.get("Hubometer_Reading"));
 		EditTheEvent.EnterVechilemodel(StoreProperties.get("Vehicle_Mode"));
-		EditTheEvent.ClickNextbutton();
+		
 		EditTheEvent.ClickAddserviceline();
 		EditTheEvent.Addserviceline();
 		//EditTheEvent.AddimageFromGallery();
@@ -322,7 +351,7 @@ public class EndToEnd_SE_Flow extends BasicCodesToStartApp  {
 		
 		ApproveTheEventByTD ApproveAction = new ApproveTheEventByTD(driver);
 		ApproveAction.Click_Approve_Button();
-	
+	*/
 	}   
 	
 	

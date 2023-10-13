@@ -6,12 +6,16 @@
   </listeners>
   <test thread-count="5" name="End_To_End_EventFlow(failed)">
     <classes>
-      <class name="org.aapium.TDActions">
+      <class name="org.aapium.EndToEnd_SE_Flow">
         <methods>
+          <include name="SP_Admin_Complete_Flow"/>
+          <include name="TD_Admin_Approve_Flow"/>
+          <include name="SC_Admin_flow"/>
           <include name="TDflow"/>
+          <include name="SP_Tech_Flow"/>
           <include name="configuration"/>
         </methods>
-      </class> <!-- org.aapium.TDActions -->
+      </class> <!-- org.aapium.EndToEnd_SE_Flow -->
     </classes>
   </test> <!-- End_To_End_EventFlow(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
